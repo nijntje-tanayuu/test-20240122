@@ -84,4 +84,6 @@ workflows:
     jobs:
       - say-goodbye
       - mkdir
-      - ls
+      - ls:
+          requires:
+            - "mkdir"
