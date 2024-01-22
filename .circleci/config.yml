@@ -75,7 +75,7 @@ jobs:
       - run:
           name: "Ls"
           command: "ls /tmp/workspace/file.txt"
-  
+
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
@@ -83,6 +83,5 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-goodbye
-      - say-hello:
-          requires:
-            - say-japan
+      - mkdir
+      - ls
