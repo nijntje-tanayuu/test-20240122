@@ -57,7 +57,7 @@ jobs:
           name: "Mkdir"
           command: "mkdir -p workspace && touch workspace/file.txt && ls"
       - persist_to_workspace:
-          root: /tmp/workspace
+          root: ./workspace
           paths:
             - "file.txt"
 
