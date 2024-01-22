@@ -59,7 +59,7 @@ jobs:
       - persist_to_workspace:
           root: /workspace
           paths:
-            - "/file.txt"
+            - "file.txt"
 
   ls:
     # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
